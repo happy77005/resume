@@ -1,0 +1,111 @@
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+/* Profile container styling */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: white;
+    max-width: 1200px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.profile-info h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #333;
+}
+
+.profile-info p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.bio {
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Responsive: profile image moves to center in mobile view */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .profile-image img {
+        margin-bottom: 20px;
+    }
+
+    .profile-info {
+        padding-left: 0;
+    }
+
+    .profile-info h1 {
+        font-size: 2.5em;
+    }
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section p, section ul {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
